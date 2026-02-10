@@ -25,7 +25,17 @@ Para executar o projeto em sua máquina local, siga estes passos:
 2.  **Instale o Node.js e o npm:**
     Certifique-se de que você tem o Node.js e o npm instalados. É recomendável instalar um gerenciador de versão do Node como o [nvm](https://github.com/nvm-sh/nvm). Ele permite que você instale e gerencie múltiplas versões do Node.js facilmente.
 
-    **Instalando com nvm:**
+    **Obs:**
+
+    Se estiver utilizando um sistema operacional **Windows** você pode instalar seguindo o [link](https://github.com/coreybutler/nvm-windows/releases). Clique no arquivo `nvm-setup.exe` em assets e siga para a instalação. Outra opção é instalar o Node pelo [site oficial](https://nodejs.org/en/download/).
+
+    Para garantir que a instalação correu bem use o comando a seguir. Ele deverá mostrar a versão do `nvm` que foi instalada:
+
+    ```bash
+    nvm --version
+    ```
+
+    **Instalando o Node.js com nvm:**
 
     a. Primeiro, instale o nvm seguindo as instruções no [repositório oficial](https://github.com/nvm-sh/nvm#installing-and-updating).
 
