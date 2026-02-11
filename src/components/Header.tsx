@@ -10,17 +10,11 @@ export default function Header() {
       bg-black/30 backdrop-blur-md border border-gray-500/30 rounded-3xl shadow-2xl
       text-gray-100 font-semibold"
     >
-      <h1 className="pl-2 font-bold">Logo</h1>
+      <NavLink className="px-4" to="/">
+        Logo
+      </NavLink>
 
       <nav className="flex gap-4">
-        <NavLink
-          className="
-          rounded-full px-4 py-2 transition-all
-          duration-200 hover:bg-white/20 active:scale-95"
-          to="/"
-        >
-          Home
-        </NavLink>
         <NavLink
           className="
           rounded-full px-4 py-2 transition-all
