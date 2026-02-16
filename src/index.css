@@ -3,20 +3,20 @@
 @theme {
   --font-outfit: 'Outfit', sans-serif;
 
-  --color-primary-50: #eef2ff;
-  --color-primary-100: #e0e7ff;
-  --color-primary-200: #c7d2fe;
-  --color-primary-300: #a5b4fc;
-  --color-primary-400: #818cf8;
-  --color-primary-500: #6366f1;
-  --color-primary-600: #4f46e5;
-  --color-primary-700: #4338ca;
-  --color-primary-800: #3730a3;
-  --color-primary-900: #312e81;
+  --color-primary-50: #d6feff;
+  --color-primary-100: #adfcff;
+  --color-primary-200: #66fbff;
+  --color-primary-300: #5ee5ff;
+  --color-primary-400: #55ceff;
+  --color-primary-500: #43a1ff;
+  --color-primary-600: #3b82f6;
+  --color-primary-700: #2d66ca;
+  --color-primary-800: #1f499d;
+  --color-primary-900: #030f44;
 
-  --color-accent-400: #f472b6;
-  --color-accent-500: #ec4899;
-  --color-accent-600: #db2777;
+  --color-accent-400: #aa83ff;
+  --color-accent-500: #935ff6;
+  --color-accent-600: #7c3aed;
 
   --color-neon-green: #34d399;
   --color-neon-blue: #38bdf8;
@@ -186,11 +186,11 @@
     font-family: 'Outfit', sans-serif;
     background: linear-gradient(
       135deg,
-      #0f0a1e 0%,
-      #1a1145 25%,
-      #1e1b4b 50%,
-      #1a0a2e 75%,
-      #0f0a1e 100%
+      #0a0934 0%,
+      #050e40 25%,
+      #041562 50%,
+      #070c3c 75%,
+      #0a0934 100%
     );
     color: white;
     overflow-x: hidden;
