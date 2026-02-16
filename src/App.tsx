@@ -1,7 +1,10 @@
+import { GameContextProvider } from './contexts/GameContextProvider';
 import MainRouter from './routes/MainRouter';
 
-function App() {
-  return <MainRouter />;
+export default function App() {
+  return (
+    <GameContextProvider>
+      <MainRouter />
+    </GameContextProvider>
+  );
 }
-
-export default App;
