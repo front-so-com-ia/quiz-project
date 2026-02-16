@@ -1,19 +1,13 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router';
 import { SetupScreen } from '../pages/SetupScreen';
+import { GameScreen } from '../pages/GameScreen';
 
 export default function MainRouter() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<SetupScreen />} />
-        <Route
-          path="/play"
-          element={
-            <h1 className="text-center font-bold text-2xl mt-10">
-              PLAY SCREEN
-            </h1>
-          }
-        />
+        <Route path="/play" element={<GameScreen />} />
         <Route
           path="/results"
           element={
