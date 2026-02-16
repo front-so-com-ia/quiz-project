@@ -6,6 +6,7 @@ export function useQueryQuestions(amount = 10) {
     queryKey: ['questions', amount],
     queryFn: () => fetchQuestions(amount),
     staleTime: Infinity,
+    gcTime: 0,
     refetchOnWindowFocus: false,
   });
 }
