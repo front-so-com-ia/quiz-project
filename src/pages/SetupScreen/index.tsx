@@ -2,6 +2,7 @@ import { useState } from 'react';
 import BaseLayout from '../../components/BaseLayout';
 import { useGameContext } from '../../contexts/GameContext';
 import { useNavigate } from 'react-router';
+import fluenquizLogo from '../../assets/FLUENQUIZ.svg';
 
 export function SetupScreen() {
   const { startGame } = useGameContext();
@@ -24,15 +25,8 @@ export function SetupScreen() {
         onSubmit={handleSubmit}
         className="glass-card p-5 sm:p-8 space-y-5 sm:space-y-6"
       >
-        <div className="text-center mb-6 sm:mb-8">
-          <h1
-            className="
-            text-3xl sm:text-5xl font-extrabold mb-2
-            bg-linear-to-r from-neon-blue via-neon-purple to-neon-pink
-            bg-clip-text text-transparent animate-gradient"
-          >
-            Fluquiz
-          </h1>
+        <div className="flex flex-col items-center xt-center mb-6 sm:mb-8">
+          <img src={fluenquizLogo} alt="Fluenquiz logo" className="w-32 h-32" />
           <p className="text-base sm:text-lg text-white/60 font-medium">
             Test your knowledge and practice you English!
           </p>
