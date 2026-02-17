@@ -27,7 +27,7 @@ export function GameScreen() {
       setSelectedAnswer(answer);
       setIsRevealed(true);
 
-      const Point_per_questions = 100
+      const Point_per_questions = 100;
 
       const isCorrect = answer === questions[currentIndex].correctAnswer;
       if (isCorrect) {
@@ -38,7 +38,10 @@ export function GameScreen() {
 
       setTimeout(() => {
         if (currentIndex + 1 >= questions.length) {
-          endGame(isCorrect ? score + Point_per_questions : score, questions.length);
+          endGame(
+            isCorrect ? score + Point_per_questions : score,
+            questions.length
+          );
           navigate('/results');
         } else {
           setCurrentIndex((prev) => prev + 1);
