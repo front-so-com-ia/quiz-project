@@ -30,6 +30,9 @@ export function ResultsScreen() {
     navigate('/');
   };
 
+  const correctAnswers = score / 100
+  const hitRateAnswers = score / 10
+
   return (
     <BaseLayout className="animate-pop-in text-center glass-card space-y-6 p-8">
       <div>
@@ -48,7 +51,7 @@ export function ResultsScreen() {
         </div>
         <div className="bg-white/5 rounded-xl p-4">
           <p className="text-3xl font-extrabold text-neon-green">
-            {0}
+            {correctAnswers}
             <span className="text-lg text-white/30">/{totalQuestions}</span>
           </p>
           <p className="text-xs text-white/40 uppercase tracking-wider font-semibold mt-1">
@@ -56,7 +59,7 @@ export function ResultsScreen() {
           </p>
         </div>
         <div className="bg-white/5 rounded-xl p-4">
-          <p className="text-3xl font-extrabold text-neon-purple">{0}%</p>
+          <p className="text-3xl font-extrabold text-neon-purple">{hitRateAnswers}%</p>
           <p className="text-xs text-white/40 uppercase tracking-wider font-semibold mt-1">
             Hit Rate
           </p>
