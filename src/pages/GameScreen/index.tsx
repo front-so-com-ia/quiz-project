@@ -27,16 +27,18 @@ export function GameScreen() {
       setSelectedAnswer(answer);
       setIsRevealed(true);
 
+      const Point_per_questions = 100
+
       const isCorrect = answer === questions[currentIndex].correctAnswer;
       if (isCorrect) {
-        setScore((prevScore) => prevScore + 1);
+        setScore((prevScore) => prevScore + Point_per_questions);
         setScoreBump(true);
         setTimeout(() => setScoreBump(false), 300);
       }
 
       setTimeout(() => {
         if (currentIndex + 1 >= questions.length) {
-          endGame(isCorrect ? score + 1 : score, questions.length);
+          endGame(isCorrect ? score + Point_per_questions : score, questions.length);
           navigate('/results');
         } else {
           setCurrentIndex((prev) => prev + 1);
